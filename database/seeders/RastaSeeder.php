@@ -14,6 +14,6 @@ class RastaSeeder extends Seeder
      */
     public function run()
     {
-        //
+        rasta::factory(10)->create();
     }
 }
