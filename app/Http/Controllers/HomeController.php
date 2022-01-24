@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\rasta;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('components.index');
+        $rastas = rasta::paginate(5);
+        return view('components.index', compact('rastas'));
     }
 
     public function show(){

@@ -18,5 +18,13 @@
             </div>
         </div>
     </nav>
-    @yield('content2')
+    <ul>
+        @foreach ($rastas as $rasta)
+            <li>{{$rasta->name}}</li>
+        @endforeach
+    </ul>
+    <main>
+        @yield('content2')
+    </main>
 @endsection
+
