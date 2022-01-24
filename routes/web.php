@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -14,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('header');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/productos', [HomeController::class,'show'])->name('show');
+Route::get('/baridreads', [HomeController::class,'about'])->name('about');
+Route::get('/contacto', [HomeController::class,'contact'])->name('contact');
 
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
