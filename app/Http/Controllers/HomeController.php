@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $rastas = rasta::paginate(9);
+        $rastas = rasta::paginate(3);
         return view('components.index', compact('rastas'));
     }
 

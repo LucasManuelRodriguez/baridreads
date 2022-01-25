@@ -65,12 +65,12 @@
       </div>
     </div>
   </header> --}}
-  <main>
+  <main >
     <div class="album py-5 bg-light">
-      <div class="container">
+      <div class="container align-items-center">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           @foreach ($rastas as $rasta)
-          <div class="col">
+          <div class="col d-flex justify-content-center">
             <div class="card" style="width: 18rem;">
               <img class="bd-placeholder-img card-img-top" src="{{$rasta->img}}" alt="{{$rasta->name}}" width="100%" height="100%">
               <div class="card-body">
