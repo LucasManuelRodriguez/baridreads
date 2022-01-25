@@ -29,15 +29,18 @@ class HomeController extends Controller
     }
 
     public function show(){
-        return view('components.show');
+        $rastas= rasta::paginate(5);
+        return view('components.show', compact('rastas'));
     }
 
     public function about(){
-        return view('components.about');
+        $rastas= rasta::paginate(5);
+        return view('components.about', compact('rastas'));
     }
     
     public function contact(){
-        return view('components.contact');
+        $rastas= rasta::paginate(5);
+        return view('components.contact', compact('rastas'));
     }
 
 
