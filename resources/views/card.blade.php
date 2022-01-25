@@ -78,10 +78,17 @@
                 <p class="card-text">{{$rasta->description}}</p>
                 <div class="d-flex justify-content-around align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <a href="#" class="btn btn-sm btn-outline-secondary">Go somewhere</a>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" class="btn btn-outline-success">+</button>
+                    <a href="#" class="btn btn-outline-success">COMPRAR</a>
+                    <button type="button" class="btn btn-outline-success">-</button>
                   </div>
+                </div>
+                <div class="d-flex justify-content-around align-items-center">
+                  @auth
+                    <div class="btn-group">
+                      <a href="#" class="btn btn-outline-success">EDITAR</a>
+                    </div>
+                  @endauth
                 </div>
               </div>
             </div>

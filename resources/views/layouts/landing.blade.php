@@ -18,7 +18,7 @@
             </div>
         </div>
     </nav>
-    <main class="">
+    <main>
         @yield('content2')
     </main>
 @endsection
