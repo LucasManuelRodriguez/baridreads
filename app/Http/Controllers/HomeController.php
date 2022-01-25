@@ -24,22 +24,22 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $rastas = rasta::paginate(5);
+        $rastas = rasta::paginate(9);
         return view('components.index', compact('rastas'));
     }
 
     public function show(){
-        $rastas= rasta::paginate(5);
+        $rastas= rasta::paginate(9);
         return view('components.show', compact('rastas'));
     }
 
     public function about(){
-        $rastas= rasta::paginate(5);
+        $rastas= rasta::paginate(9);
         return view('components.about', compact('rastas'));
     }
     
     public function contact(){
-        $rastas= rasta::paginate(5);
+        $rastas= rasta::paginate(9);
         return view('components.contact', compact('rastas'));
     }
 

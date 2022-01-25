@@ -18,7 +18,7 @@ class RastaFactory extends Factory
         return [
             'name'=>$this->faker->sentence(),
             'description'=>$this->faker->paragraph(),
-            'img'=>$this->faker->image()
+            'img'=>$this->faker->imageUrl()
         ];
     }
 }
