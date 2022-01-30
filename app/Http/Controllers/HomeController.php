@@ -34,7 +34,7 @@ class HomeController extends Controller
     }
 
     public function about(){
-        $rastas= rasta::paginate(9);
+        $rastas= rasta::paginate(4);
         return view('components.about', compact('rastas'));
     }
     
