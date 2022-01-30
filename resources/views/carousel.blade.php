@@ -41,17 +41,21 @@
       <div class="carousel-inner">
               <div class="carousel-item active">
                 @foreach ($rastas as $rasta)
-                  <img class="bd-placeholder-img card-img-top" src="{{$rasta->img}}" alt="{{$rasta->name}}" width="100%" height="100%">
+                  <img class="bd-placeholder-img card-img-top" src="{{$rasta->img}}" alt="{{$rasta->name}}" width="60%" height="100%">
                   <div class="container">
                     <div class="carousel-caption">
                       <h1>Rastas Sinteticas</h1>
                       <p>No dañan el pelo natural</p>
-                      <a href="#" class="btn btn-outline-success">COMPRAR</a>                    
+                      <a href="#" class="btn btn-outline-success">COMPRAR</a>
+                      @auth
+                      <a href="#" class="btn btn-outline-success">EDITAR</a>
+                      @endauth
                     </div>
                   </div>  
                 @endforeach 
               </div>
       </div>
   </main>
+  
 </body>
 </html>
