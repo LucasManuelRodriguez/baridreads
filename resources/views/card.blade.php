@@ -53,10 +53,12 @@
                     <button type="button" class="btn btn-outline-success">-</button>
                   </div>
                 </div>
+                <br>
                 <div class="d-flex justify-content-around align-items-center">
                   @auth
                     <div class="btn-group">
                       <a href="#" class="btn btn-outline-success">EDITAR</a>
+                      <a href="#" class="btn btn-outline-success">BORRAR</a>
                     </div>
                   @endauth
                 </div>

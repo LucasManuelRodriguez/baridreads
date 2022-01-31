@@ -53,7 +53,7 @@
     <div class="row mb-2">
       @foreach ($rastas as $rasta)
         <div class="col-md-6">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-success">{{$rasta->location}}</strong>
               <h3 class="mb-0">{{$rasta->title}}</h3>
@@ -62,6 +62,13 @@
             </div>
             <div class="col p-4 d-flex flex-column position-static">
               <img src="{{$rasta->img}}" alt="{{$rasta->name}}" width="100%" height="100%">
+              <br>
+                @auth
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-outline-success">EDITAR</a>
+                    <a href="#" class="btn btn-outline-success">BORRAR</a>
+                  </div>
+                @endauth
             </div>
           </div>
         </div>
