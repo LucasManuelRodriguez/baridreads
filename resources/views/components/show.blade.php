@@ -1,5 +1,11 @@
 @extends('layouts.landing')
 @section('content2')
+    <br>
+            <section class="d-flex justify-content-center d-grid gap-2 ">
+                <a href="#" class="btn btn-outline-success btn-sm">RASTAS SIMPLES</a>
+                <a href="#" class="btn btn-outline-success btn-sm">RASTAS DOBLES</a>
+                <a href="#" class="btn btn-outline-success btn-sm">ACCESORIOS</a>
+            </section> 
     @auth
         <br>
         <section class="container d-flex justify-content-center">
