@@ -47,6 +47,9 @@
       <div class="col-md-6 px-0">
         <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
         <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+        @auth
+          <a href="#" class="btn btn-outline-success">EDITAR</a>
+        @endauth
       </div>
     </div>
 
