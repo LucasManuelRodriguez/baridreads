@@ -18,7 +18,13 @@
   <link rel="mask-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
   <link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon.ico">
   <meta name="theme-color" content="#7952b3">
+  {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+
   <style>
+      .bg-card{
+        background-color: #bc8684 !important;
+      }
+      
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -33,10 +39,10 @@
       }
   </style>
 </head>
-<body>    
+<body class="bg-card">    
 
   <main >
-    <div class="album py-5 bg-light">
+    <div class="album py-5 bg-card">
       <div class="container align-items-center">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           @foreach ($rastas as $rasta)
@@ -49,9 +55,13 @@
                 <div class="d-flex justify-content-around align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-outline-success">+</button>
-                    <a href="#" class="btn btn-outline-success">COMPRAR</a>
+                    <button type="button" class="btn btn-outline-success">1</button>
                     <button type="button" class="btn btn-outline-success">-</button>
                   </div>
+                </div>
+                <br>
+                <div class="d-flex justify-content-around align-items-center">
+                  <a href="#" class="btn btn-secondary">COMPRAR</a>
                 </div>
                 <br>
                 <div class="d-flex justify-content-around align-items-center">

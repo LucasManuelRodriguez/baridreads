@@ -6,3 +6,17 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.c-card{
+    color: #f2d2a1 !important;
+    border-color: #f2d2a1 !important;
+    background-color: #bc8684 !important;
+
+}
+.c-card:hover {
+    color: black !important;
+    background-color: #f2d2a1 !important;
+    border-color: #f2d2a1 !important;
+}
+
+// @import 'index';

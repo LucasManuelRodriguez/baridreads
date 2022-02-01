@@ -2,14 +2,14 @@
 @section('content2')
     <br>
             <section class="d-flex justify-content-center d-grid gap-2 ">
-                <a href="#" class="btn btn-outline-success btn-sm">RASTAS SIMPLES</a>
-                <a href="#" class="btn btn-outline-success btn-sm">RASTAS DOBLES</a>
-                <a href="#" class="btn btn-outline-success btn-sm">ACCESORIOS</a>
+                <a href="#" class="btn c-card btn-sm">RASTAS SIMPLES</a>
+                <a href="#" class="btn c-card btn-sm">RASTAS DOBLES</a>
+                <a href="#" class="btn c-card btn-sm">ACCESORIOS</a>
             </section> 
     @auth
         <br>
         <section class="container d-flex justify-content-center">
-            <a href="#" class="btn btn-outline-success">AGREGAR PRODUCTO</a>
+            <a href="#" class="btn c-card">AGREGAR PRODUCTO</a>
         </section>  
     @endauth
     @include('card')
