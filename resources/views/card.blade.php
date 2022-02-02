@@ -68,7 +68,11 @@
                   @auth
                     <div class="btn-group">
                       <a href="#" class="btn btn-outline-success">EDITAR</a>
-                      <a href="#" class="btn btn-outline-success">BORRAR</a>
+                      <form action="/rastas/{{$rasta->id}}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-outline-success">BORRAR</button>
+                      </form>
                     </div>
                   @endauth
                 </div>

@@ -43,5 +43,11 @@ class HomeController extends Controller
         return view('components.contact', compact('rastas'));
     }
 
+    public function destroy($id){
+        $rastaToDelete = rasta::findOrFail($id);
+        $rastaToDelete->delete();
+        return back();
+    }
+
 
 }

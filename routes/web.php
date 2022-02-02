@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::delete('/rastas/{id}', [HomeController::class, 'destroy']);
 Route::get('/productos', [HomeController::class,'show'])->name('show');
 Route::get('/baridreads', [HomeController::class,'about'])->name('about');
 Route::get('/contacto', [HomeController::class,'contact'])->name('contact');
