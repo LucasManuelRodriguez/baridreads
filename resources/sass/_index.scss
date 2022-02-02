@@ -7717,7 +7717,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: var(--bs-pink);
+  color: var(--bs-pink) !important;
 }
 
 .text-secondary {

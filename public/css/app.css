@@ -11297,3 +11297,11 @@ textarea.form-control-lg {
   background-color: #f2d2a1 !important;
   border-color: #f2d2a1 !important;
 }
+
+.bg-page {
+  background-color: #ffab9e !important;
+}
+
+.c-text {
+  color: white !important;
+}

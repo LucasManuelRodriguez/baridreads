@@ -39,10 +39,10 @@
       }
   </style>
 </head>
-<body class="bg-card">    
+<body>    
 
   <main >
-    <div class="album py-5 bg-card">
+    <div class="album py-5">
       <div class="container align-items-center">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           @foreach ($rastas as $rasta)
@@ -61,7 +61,7 @@
                 </div>
                 <br>
                 <div class="d-flex justify-content-around align-items-center">
-                  <a href="#" class="btn btn-secondary">COMPRAR</a>
+                  <a href="#" class="btn c-card">COMPRAR</a>
                 </div>
                 <br>
                 <div class="d-flex justify-content-around align-items-center">
