@@ -14,6 +14,13 @@ class RastaSeeder extends Seeder
      */
     public function run()
     {
+        // rasta::factory()->create([
+        //     'name'=>'rastas',
+        //     'title'=>'man with dreads',
+        //     'location'=>'Bariloche',
+        //     'description'=>'cabeza completa',
+        //     'img'=>'https://cdn.palbincdn.com/users/10670/images/jassir-jonis-xwz84heqHxE-unsplash_opt-1592333980.jpg'
+        // ]);
         rasta::factory(10)->create();
     }
 }

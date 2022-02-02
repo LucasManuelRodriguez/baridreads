@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class rasta extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'title',
+        'location',
+        'description',
+        'img'
+    ];
 }

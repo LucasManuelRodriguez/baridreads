@@ -41,12 +41,12 @@
       <div class="carousel-inner">
               <div class="carousel-item active">
                 @foreach ($rastas as $rasta)
-                  <img class="bd-placeholder-img card-img-top" src="{{$rasta->img}}" alt="{{$rasta->name}}" width="60%" height="100%">
+                  <img class="bd-placeholder-img card-img-top" src="https://cdn.palbincdn.com/users/10670/images/jassir-jonis-xwz84heqHxE-unsplash_opt-1592333980.jpg" alt="{{$rasta->name}}" width="60%" height="100%">
                   <div class="container">
                     <div class="carousel-caption">
                       <h1>Rastas Sinteticas</h1>
                       <p>No dañan el pelo natural</p>
-                      <a href="#" class="btn btn-outline-success">COMPRAR</a>
+                      <a href="#" class="btn c-card h2">COMPRAR</a>
                       @auth
                       <a href="#" class="btn btn-outline-success">EDITAR</a>
                       @endauth
