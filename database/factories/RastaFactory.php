@@ -17,10 +17,12 @@ class RastaFactory extends Factory
     {
         return [
             'name'=>$this->faker->sentence(),
-            'title'=>$this->faker->firstName(),
+            // 'title'=>$this->faker->firstName(),
             'description'=>$this->faker->paragraph(),
-            'img'=>$this->faker->imageUrl(),
-            'location'=>$this->faker->country()
+            'price'=>$this->faker->randomNumber(),
+            'cantidad'=>$this->faker->randomNumber(),
+            'img'=>$this->faker->imageUrl()
+            // 'location'=>$this->faker->country()
         ];
     }
 }

@@ -16,9 +16,9 @@ class CreateRastasTable extends Migration
         Schema::create('rastas', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('title');
-            $table->string('location');
             $table->text('description');
+            $table->integer('cantidad');
+            $table->integer('price');
             $table->string('img');
             $table->timestamps();
         });

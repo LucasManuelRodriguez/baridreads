@@ -29,7 +29,7 @@ class HomeController extends Controller
     }
 
     public function show(){
-        $rastas= rasta::paginate(9);
+        $rastas= rasta::paginate(15);
         return view('components.show', compact('rastas'));
     }
 
@@ -44,9 +44,24 @@ class HomeController extends Controller
     }
 
     public function destroy($id){
-        $rastaToDelete = rasta::findOrFail($id);
-        $rastaToDelete->delete();
+        rasta::destroy($id);
         return back();
+    }
+    
+    public function create(){
+        return view('components.rastasForm');
+    }
+
+    public function store(Request $request){
+        $data =[
+            'name'=>$request->name,
+            'description'=>$request->description,
+            'img'=>$request->img,
+            'price'=>$request->price,
+            'cantidad'=>$request->cantidad
+        ];
+        rasta::create($data);
+        return redirect(route('show'));
     }
 
 

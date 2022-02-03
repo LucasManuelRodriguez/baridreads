@@ -9,7 +9,7 @@
     @auth
         <br>
         <section class="container d-flex justify-content-center">
-            <a href="#" class="btn c-card">AGREGAR PRODUCTO</a>
+            <a href="{{route('create')}}" class="btn c-card">AGREGAR PRODUCTO</a>
         </section>  
     @endauth
     @include('card')

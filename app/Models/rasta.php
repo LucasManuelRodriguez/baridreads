@@ -11,9 +11,9 @@ class rasta extends Model
 
     protected $fillable = [
         'name',
-        'title',
-        'location',
         'description',
-        'img'
+        'img',
+        'cantidad',
+        'price'
     ];
 }
