@@ -64,5 +64,27 @@ class HomeController extends Controller
         return redirect(route('show'));
     }
 
+    public function edit($id){
+        $rasta = rasta::findOrFail($id);
+        return view('components.editForm', ['rasta'=>$rasta]);
+    }
+
+    public function update(Request $request, $id){
+        $rasta = rasta::findOrFail($id);
+
+        $data =[
+            $rasta->name=$request->input('name'),
+            $rasta->description=$request->input('description'),
+            // 'description'=>$request->description,
+            $rasta->img=$request->input('img'),
+            // 'img'=>$request->img,
+            $rasta->price=$request->input('price'),
+            // 'price'=>$request->price,
+            $rasta->cantidad=$request->input('cantidad')
+            // 'cantidad'=>$request->cantidad
+        ];
+        $rasta->save($data);
+        return redirect(route('show'));
+    }
 
 }
