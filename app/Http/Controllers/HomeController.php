@@ -43,6 +43,11 @@ class HomeController extends Controller
         return view('components.contact', compact('rastas'));
     }
 
+    public function cart(){
+
+        return view('components.cart');
+    }
+
     public function destroy($id){
         rasta::destroy($id);
         return back();
@@ -75,13 +80,9 @@ class HomeController extends Controller
         $data =[
             $rasta->name=$request->input('name'),
             $rasta->description=$request->input('description'),
-            // 'description'=>$request->description,
             $rasta->img=$request->input('img'),
-            // 'img'=>$request->img,
             $rasta->price=$request->input('price'),
-            // 'price'=>$request->price,
             $rasta->cantidad=$request->input('cantidad')
-            // 'cantidad'=>$request->cantidad
         ];
         $rasta->save($data);
         return redirect(route('show'));

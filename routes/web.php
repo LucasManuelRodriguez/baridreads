@@ -26,6 +26,7 @@ Route::delete('/rastas/{id}', [HomeController::class, 'destroy']);
 Route::get('/productos', [HomeController::class,'show'])->name('show');
 Route::get('/baridreads', [HomeController::class,'about'])->name('about');
 Route::get('/contacto', [HomeController::class,'contact'])->name('contact');
+Route::get('/carrito', [HomeController::class,'cart'])->name('cartshow');
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Auth::routes();
