@@ -1,7 +1,7 @@
 @extends('layouts.landing')
 @section('content2')
         @include('carousel')
-        @include('card')
+        @include('albumCard')
         <div class="container "> 
                 <a class="d-flex justify-content-center c-text h5" href="{{route('show')}}">Ver MAS</a>
         </div>

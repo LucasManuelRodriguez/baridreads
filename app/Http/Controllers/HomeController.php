@@ -77,15 +77,15 @@ class HomeController extends Controller
     public function update(Request $request, $id){
         $rasta = rasta::findOrFail($id);
 
-        $data =[
+        $validateData = $request->validate([
             $rasta->name=$request->input('name'),
             $rasta->description=$request->input('description'),
             $rasta->img=$request->input('img'),
             $rasta->price=$request->input('price'),
             $rasta->cantidad=$request->input('cantidad')
-        ];
-        $rasta->save($data);
-        return redirect(route('show'));
+        ]);
+        $rasta->save($validateData);
+        return back();
     }
 
 }
