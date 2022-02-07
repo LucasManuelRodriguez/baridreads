@@ -16,13 +16,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/rastas/create', [HomeController::class, 'create'])->name('create');
-Route::post('/rastas/store', [HomeController::class, 'store'])->name('store');
-Route::get('/rastas/edit/{id}', [HomeController::class, 'edit'])->name('edit');
-Route::put('/rastas/{id}', [HomeController::class, 'update'])->name('update');
+Route::get('/rastas/create', [HomeController::class, 'create'])->name('create')->middleware('auth');
+Route::post('/rastas/store', [HomeController::class, 'store'])->name('store')->middleware('auth');
+Route::get('/rastas/edit/{id}', [HomeController::class, 'edit'])->name('edit')->middleware('auth');
+Route::put('/rastas/{id}', [HomeController::class, 'update'])->name('update')->middleware('auth');
 
 
-Route::delete('/rastas/{id}', [HomeController::class, 'destroy']);
+Route::delete('/rastas/{id}', [HomeController::class, 'destroy'])->middleware('auth');
 Route::get('/productos', [HomeController::class,'show'])->name('show');
 Route::get('/baridreads', [HomeController::class,'about'])->name('about');
 Route::get('/contacto', [HomeController::class,'contact'])->name('contact');

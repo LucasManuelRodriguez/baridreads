@@ -24,7 +24,6 @@
         <div class="d-flex justify-content-around align-items-center">
           @auth
             <div class="btn-group">
-              {{-- <a href="#" class="btn btn-outline-success">EDITAR</a> --}}
               <form action="{{route('edit', $rasta->id)}}" method="get">
                 @csrf
                 <button type="submit" class="btn btn-outline-success">EDITAR</button>

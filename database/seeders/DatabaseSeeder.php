@@ -15,12 +15,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::factory([
-            'email'=> 'user@user.com',
-            'name' => 'user',
-            'password' => '12345678'
+        User::factory([
+            'name'=>'Rodriguez',
+            'email'=>'rodriguez.m.lucas@gmail.com',
+            'is_admin'=>true,
         ])->create();
-        User::factory(10)->create();
+        // User::factory(10)->create();
         $this->call(RastaSeeder::class);
     }
 }
